@@ -31,7 +31,7 @@ public class GamePanel extends JPanel implements Runnable{
 
         while(gameThread != null){
 
-            System.out.println("The game log is running");
+//            System.out.println("The game log is running");
             //1 UPDATE:  Update info as such as character positions
             update();
             //2 DRAW: Draw the screen with update info
@@ -44,9 +44,17 @@ public class GamePanel extends JPanel implements Runnable{
 
     }
 
+    //creates pink rectangle
     public void paintComponent(Graphics g){
+
         super.paintComponent(g);
 
+        Graphics2D g2 = (Graphics2D)g;
+
+        g2.setColor(Color.pink);
+
+        g2.fillRect(100,100, TileSize, TileSize);
+        g2.dispose();
 
     }
 
