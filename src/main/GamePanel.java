@@ -31,7 +31,7 @@ public class GamePanel extends JPanel implements Runnable{
 
         while(gameThread != null){
 
-//            System.out.println("The game log is running");
+            System.out.println("The game log is running");
             //1 UPDATE:  Update info as such as character positions
             update();
             //2 DRAW: Draw the screen with update info
